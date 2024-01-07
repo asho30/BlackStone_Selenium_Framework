@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BlackStone App Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.blackstone.retryAnalyzer.RetryTransformer" />
+	</listeners>
+
+	<test thread-count="2" name="BlackStone Automation Test Framework">
+		<classes>
+
+			<class name="com.blackstone.testcases.ConfigTest" />
+			<class name="com.blackstone.testcases.BlackStone_Test" />
+		
+		</classes>
+	</test>
+</suite><!-- Suite -->
